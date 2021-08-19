@@ -89,4 +89,6 @@ else:
 ```
 This function aids the chess engine by assigning scores to each legal move (see pvc.select() for the minimax root function which sorts the moves by score). First, the moves are ordered by immediate value (see pvc.value() for the square and capture evaluations) and the first is initialised as the best. Then, each and every possible move is pushed to the board (made), assigned a score*, and popped from the board (unmade). Next, the move is compared to the previous best compared on how far away it is from checkmate, and the alpha-beta pruning is applied for moves with a theoretical score of infinity. Finally, the function will return the maximum (or minimum, depending on turn) of all scores for pvc.select() to return the best move and push it to the board.
 
+*The score is assigned by how the player will respond after the computer's move, and how the computer will respond to the player's counter. The move with the highest score is the one with the highest evaluation after several moves with both the player and the computer.
+
 ###### Created by Ethan Ali for CS50
