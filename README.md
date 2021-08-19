@@ -1,6 +1,7 @@
 # ChessCore Engine
 ### Video Demo: https://youtu.be/fHbzd6Tsono
-### Description:
+### Description
+----------
 #### Introduction
 
 The ChessCore Engine is an interactive program in Python that allows you to play a chess game against a computer or another human. After thousands of tests and more than half a dozen versions, this intelligent chess engine will quickly rank, test, and assign a score to all possible chess moves on a given board and decisively attack or defend based on the position.
